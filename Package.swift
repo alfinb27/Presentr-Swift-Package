@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Presentr-Swift-Package",
+    platforms: [.iOS(.v12)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -16,8 +17,5 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Presentr-Swift-Package"),
-        .testTarget(
-            name: "Presentr-Swift-PackageTests",
-            dependencies: ["Presentr-Swift-Package"]),
     ]
 )
